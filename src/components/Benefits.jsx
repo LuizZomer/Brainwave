@@ -17,9 +17,11 @@ const Benefits = () => {
         <div className="flex flex-wrap gap-10 mb-10">
           {benefits.map((item) => (
             <div
-              key={item.id}
               className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
-              style={{ backgroundImage: `url(${item.backgroundUrl})` }}
+              style={{
+                backgroundImage: `url(${item.backgroundUrl})`,
+              }}
+              key={item.id}
             >
               <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
                 <h5 className="h5 mb-5">{item.title}</h5>
@@ -27,8 +29,8 @@ const Benefits = () => {
                 <div className="flex items-center mt-auto">
                   <img
                     src={item.iconUrl}
-                    height={48}
                     width={48}
+                    height={48}
                     alt={item.title}
                   />
                   <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
@@ -51,11 +53,12 @@ const Benefits = () => {
                       width={380}
                       height={362}
                       alt={item.title}
-                      className="w=full h-full object-cover"
+                      className="w-full h-full object-cover"
                     />
                   )}
                 </div>
               </div>
+
               <ClipPath />
             </div>
           ))}
