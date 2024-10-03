@@ -58,10 +58,9 @@ const Benefits = () => {
                   )}
                 </div>
               </div>
-
-              <ClipPath />
             </div>
           ))}
+          <ClipPath />
         </div>
       </div>
     </Section>
